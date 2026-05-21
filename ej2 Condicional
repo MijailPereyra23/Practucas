@@ -1,0 +1,35 @@
+using System.Xml;
+
+namespace ejercicioCondicionales2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            double salarioTotal = 0;
+            Console.WriteLine("Ingrese la edad: ");
+            double añosLab = Convert.ToDouble(Console.ReadLine());
+
+            Console.WriteLine("\nIngrese el Salario");
+            double salario = Convert.ToDouble(Console.ReadLine());
+
+            if (añosLab > 1)
+            {
+                Console.WriteLine("Recibira Bonificacion del 15%");
+                salarioTotal = salario + (salario * 0.15);
+            }
+            else if (añosLab >= 2 && añosLab <= 5)
+            {
+                Console.WriteLine("Recibira Bonificacion del 20%");
+                salarioTotal = salario + (salario * 0.20);
+            }
+            else if (añosLab > 5)
+            {
+                Console.WriteLine("Recibira Bonificacion del 25%");
+                salarioTotal = salario + (salario * 0.25);
+            }
+
+            Console.WriteLine("El salario total es: {0}\nAños trabajados son: {1}", salarioTotal, añosLab);
+        }
+    }
+}
