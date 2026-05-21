@@ -1,0 +1,21 @@
+namespace ejercicioCondicionales2
+{
+    internal class Program
+    {
+        static void Main(string[] args)
+        {
+            string password = "1234";
+
+            Console.WriteLine("Ingrese la contraseña:");
+            string contraseña = Console.ReadLine();
+            if (contraseña.Equals(password))
+            {
+                Console.WriteLine("Contraseña correcta");
+            }
+            else
+            {
+                Console.WriteLine("Contraseña erronea"); 
+            }
+        }
+    }
+}
